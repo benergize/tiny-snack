@@ -14,7 +14,7 @@ TinySnack("This is the text that will show up in the snackbar.", "LINK TEXT", fu
 
 TinySnack({
   "text": "This is the text that will show up in the snackbar.",
-  "link": "LINK TEXT",
+  "linkText": "LINK TEXT",
   "onclick": function() { alert("This will appear when you click 'LINK TEXT.'"); }
 });
 ```
