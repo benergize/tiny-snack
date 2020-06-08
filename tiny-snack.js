@@ -13,7 +13,7 @@ function TinySnack(textOrObject, linkText="", linkFunc=function(){},attrs={}) {
 	let snackID = new Date().getTime();
 	let snackbar = document.createElement("div");
 	snackbar.innerHTML = `
-		<div id="tinysnack${snackID}" style="position: fixed; width: 90vw; max-width: 400px; height: 8vh; bottom: 12vh; transition: left .75s ease-out, opacity .75s ease-out; opacity:0; z-index: 999; background: #2f2f33e0; left: 100%; border-radius: 3px;box-shadow: 0px 0px 5px rgba(0,0,0,.25); color: #f5f5f5; display: flex; padding: 0% 4%; align-items: center; justify-content: space-between;">
+		<div id="tinysnack${snackID}" style="position: fixed; width: 90vw; max-width: 400px; min-height: 8vh; bottom: 12vh; transition: left .75s ease-out, opacity .75s ease-out; opacity:0; z-index: 999; background: #2f2f33e0; left: 100%; border-radius: 3px;box-shadow: 0px 0px 5px rgba(0,0,0,.25); color: #f5f5f5; display: flex; padding: 0% 4%; align-items: center; justify-content: space-between;">
 			<span data-role="snackText" style = 'flex-basis:75%;'>${content}</span>
 			<span data-role="snackLink" style = 'color:lightblue;font-weight:bold;'>${linkContent}</span>
 		</div>
